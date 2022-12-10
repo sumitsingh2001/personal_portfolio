@@ -5,7 +5,7 @@ import './style.css';
 const Header = () => {
   return (
     <>
-      <div className='banner_container'>
+      <div className='header_container'>
         <Navigation />
         <Banner />
       </div>

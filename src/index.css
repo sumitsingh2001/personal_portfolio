@@ -4,15 +4,34 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: diplomata;
 
 }
 
-/* Kanit Font sizes */
+body {
+  background-color: var(--background);
+}
+
 @font-face {
   font-family: diplomata;
   src: url(assets/fonts/DiplomataSC-Regular.ttf);
 }
+
+@font-face {
+  font-family: cormorant;
+  src: url(assets/fonts/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+  font-family: cormorant_bold;
+  src: url(assets/fonts/CormorantGaramond-Bold.ttf);
+}
+
+@font-face {
+  font-family: cormorant_med;
+  src: url(assets/fonts/CormorantGaramond-Medium.ttf);
+}
+
+/* Kanit Font sizes */
 
 @font-face {
   font-family: kanit_semi;
@@ -80,6 +99,7 @@
   --background: #242734;
   --lil-fade-background: #292c39;
   --link-color: #848792;
+  --color-white: #ffffff;
   /*  */
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
