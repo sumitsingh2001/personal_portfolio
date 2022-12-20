@@ -1,0 +1,13 @@
+.span_title_cont .span_title {
+  color: var(--link-color);
+  font-family: kanit_medium, serif;
+  font-size: 16px;
+  letter-spacing: 1.04px;
+  line-height: 4;
+  /* margin-bottom: 16px; */
+}
+
+.span_title_cont .span_title .title_line {
+  margin-right: 10px;
+  font-size: 22px;
+}

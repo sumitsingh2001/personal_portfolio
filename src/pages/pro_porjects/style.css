@@ -1,0 +1,177 @@
+body.active {
+  overflow-y: hidden;
+}
+
+.project_container {
+  margin: 0 auto;
+  padding: 56px 0 80px 0;
+  position: relative;
+}
+
+.project_title {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.project_carousel {
+  /* border: 1px solid #fff; */
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 10px;
+  /* display: none; */
+
+}
+
+.project_carousel_card {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.pro_img_wrap {
+  width: 100%;
+  height: 300px;
+}
+
+.pro_img_wrap img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(90%);
+  transition: all 0.2s ease-out;
+  opacity: 0.6;
+}
+
+.project_carousel_card:hover img {
+  filter: grayscale(0);
+  opacity: 0.9;
+}
+
+.pro_desc {
+  width: 100%;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+.pro_desc_head {
+  color: var(--color-white);
+  font-family: diplomata;
+  font-size: 14px;
+  margin-bottom: 16px;
+  letter-spacing: 1.1px;
+
+}
+
+.pro_desc_para {
+  color: var(--color-white);
+  font-family: kanit_semi;
+  letter-spacing: 1.1px;
+  font-size: 16px;
+}
+
+.project_modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.modal_overlay {
+  background-color: hsla(227, 35%, 15%, 0.3);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.modal_window {
+  width: 85%;
+  height: 650px;
+  margin-inline: auto;
+  background: #fff;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  position: relative;
+  padding: 30px 15px;
+  animation: scale-up-hor-center 0.1s ease-out;
+}
+
+@keyframes scale-up-hor-center {
+  0% {
+    transform: scaleX(0.4);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.window_objects {
+  background-color: #ccc;
+}
+
+.window_objects .video_wrap {
+  width: 100%;
+  height: 100%;
+
+}
+
+.window_objects .video_wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.window_close_btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.object_title {
+  padding: 20px 5px 10px;
+}
+
+.object_title .obj_head {
+  margin-bottom: 16px;
+  font-family: kanit_semi;
+  line-height: 1;
+}
+
+.object_title .obj_para {
+  font-family: kanit_regular;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+
+.g1 {
+  grid-column: 1/4;
+  grid-row: 1/3;
+}
+
+.g2 {
+  grid-row: 1/4;
+
+}
+
+.g3 {
+  grid-column: 1/4;
+}
+
+.g4 {
+  grid-row: 4/4;
+  grid-column: 1/3;
+}
+
+.g5 {
+  grid-row: 4/4;
+  grid-column: 3/5;
+}
+
+.g8 {
+  grid-column: 1/5;
+  grid-row: 5/6;
+}

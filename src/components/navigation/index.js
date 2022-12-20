@@ -8,7 +8,11 @@ const Navigation = () => {
     <>
       <div className='navigation_container'>
         <div className='logo'>
-          <div className='logo_wrap'>
+          <div
+            className='logo_wrap wow hinge'
+            data-wow-duration='4s'
+            data-wow-delay='1.2s'
+          >
             <img src={logo_white} alt='logo_name' />
           </div>
         </div>
