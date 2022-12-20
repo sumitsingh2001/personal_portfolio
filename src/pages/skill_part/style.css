@@ -1,0 +1,9 @@
+.skill_container {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.skill_chart {
+  height: 500px;
+}

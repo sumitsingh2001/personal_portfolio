@@ -1,0 +1,61 @@
+.services_container {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 56px;
+  user-select: none;
+  padding-bottom: 80px;
+}
+
+.services_container .services_details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px 10px;
+}
+
+.services_container .services_details .service_items {
+  display: flex;
+  column-gap: 20px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.services_container .services_details .service_items .service_card_icon {
+  color: var(--color-white);
+  font-size: 48px;
+  opacity: 0.9;
+  transition: all 0.3s ease-out;
+}
+
+.service_items:hover .service_card_icon {
+  transform: translateY(-5px);
+}
+
+.service_item_details {
+  width: 100%;
+}
+
+.service_item_details .ser_item_head {
+  color: var(--color-white);
+  font-family: notosans_semi;
+  font-size: 18px;
+  margin-bottom: 8px;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.service_items:hover .ser_item_head {
+  transform: translateX(6px);
+}
+
+.service_item_details .ser_item_sub {
+  color: var(--color-white);
+  font-family: notosans_medium;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: all 0.3s ease-out;
+}
+
+.service_items:hover .ser_item_sub {
+  transform: translateX(-6px);
+}
