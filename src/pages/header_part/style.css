@@ -2,4 +2,22 @@
   width: 100%;
   height: auto;
   background-color: var(--background);
+  position: relative;
 }
+
+/* .video_wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.video_wrap video {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  position: absolute;
+  z-index: 2;
+
+  bottom: -3%;
+} */

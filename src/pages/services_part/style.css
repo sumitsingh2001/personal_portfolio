@@ -1,3 +1,7 @@
+.service_back {
+  background-color: var(--lil-fade-background);
+}
+
 .services_container {
   width: 85%;
   margin: 0 auto;
