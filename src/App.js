@@ -3,6 +3,7 @@ import { Header, Footer, Services, Skills, Projects } from './pages';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import React, { useEffect } from 'react';
+import { Company, Counter } from './components';
 
 // import WOW from 'wowjs';
 const isServer = typeof window === 'undefined';
@@ -16,11 +17,13 @@ function App() {
   return (
     <>
       <div className='app_container'>
-        {/* <Header />
+        <Header />
         <Services />
-        <Skills /> */}
+        <Skills />
+        <Company />
         <Projects />
-        {/* <Footer /> */}
+        <Counter />
+        <Footer />
       </div>
     </>
   );

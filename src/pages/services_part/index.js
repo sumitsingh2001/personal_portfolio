@@ -4,8 +4,8 @@ import { ServiceData } from '../../data/pageData';
 import './style.css';
 
 const Services = () => {
-  return (
-    <>
+  return <>
+    <div className="service_back">
       <div className='services_container'>
         <div className='services_titles'>
           <SpanTitle title={'My services'} />
@@ -35,8 +35,8 @@ const Services = () => {
           })}
         </div>
       </div>
-    </>
-  );
+    </div>
+  </>;
 };
 
 export default Services;

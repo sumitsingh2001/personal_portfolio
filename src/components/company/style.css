@@ -1,0 +1,50 @@
+.company_container {
+  background-color: var(--lil-fade-background);
+  padding-bottom: 80px;
+  user-select: none;
+
+}
+
+.comp_details {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.comp_imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  row-gap: 20px;
+}
+
+.comp_i_cards {
+  width: 300px;
+  height: 100px;
+  border: 1px solid var(--link-color);
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.comp_i_cards:hover {
+  transform: translateY(-10px);
+}
+
+.comp_i_cards .img_wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.comp_i_cards .img_wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.im {
+  filter: drop-shadow(1px 1px 1px #fff) invert(105%);
+}
