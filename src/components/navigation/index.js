@@ -18,25 +18,25 @@ const Navigation = () => {
         </div>
         <ul className='links'>
           <li className='link_items'>
-            <a href='/' className=''>
+            <Link to='/' className=''>
               Home
-            </a>
+            </Link>
           </li>
           <li className='link_items'>
-            <a href='/' className=''>
+            <Link to='/about' className=''>
               About
-            </a>
+            </Link>
           </li>
           <li className='link_items'>
-            <a href='/' className=''>
+            <Link to='/contact' className=''>
               Contact
-            </a>
+            </Link>
           </li>
-          <li className='link_items'>
-            <a href='/' className=''>
+          {/* <li className='link_items'>
+            <Link to='/services' className=''>
               services
-            </a>
-          </li>
+            </Link>
+          </li> */}
         </ul>
         <div class='navigation_btn'>
           <button class='nav_btn'>

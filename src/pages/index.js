@@ -3,3 +3,7 @@ export { default as Footer } from './footer_part';
 export { default as Services } from './services_part';
 export { default as Skills } from './skill_part';
 export { default as Projects } from './pro_porjects';
+export { default as Home } from './home';
+export { default as About } from './about';
+export { default as Contact } from './contact';
+export { default as Nothing } from './nothing';
