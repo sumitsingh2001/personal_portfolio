@@ -39,7 +39,10 @@ import Py5 from '../images/pyramid/py-5.png';
 import Py6 from '../images/pyramid/py-6.png';
 import Py7 from '../images/pyramid/py-7.png';
 
+import error from '../images/error_page/404-error.webp';
+
 export {
+  error,
   logo_white,
   banner_img,
   sumit_1,

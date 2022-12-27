@@ -1,9 +1,9 @@
 import './App.css';
-import { Header, Footer, Services, Skills, Projects } from './pages';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import React, { useEffect } from 'react';
-import { Company, Counter } from './components';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { About, Contact, Home, Nothing } from './pages';
 
 // import WOW from 'wowjs';
 const isServer = typeof window === 'undefined';
@@ -16,15 +16,14 @@ function App() {
 
   return (
     <>
-      <div className='app_container'>
-        <Header />
-        <Services />
-        <Skills />
-        <Company />
-        <Projects />
-        <Counter />
-        <Footer />
-      </div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='*' element={<Nothing />} />
+        </Routes>
+      </Router>
     </>
   );
 }
