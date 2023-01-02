@@ -40,6 +40,8 @@ import Py6 from '../images/pyramid/py-6.png';
 import Py7 from '../images/pyramid/py-7.png';
 
 import error from '../images/error_page/404-error.webp';
+import git_org from '../images/about_git_org.png';
+import git_dots from '../images/current_git.png';
 
 export {
   error,
@@ -79,4 +81,6 @@ export {
   Py5,
   Py6,
   Py7,
+  git_dots,
+  git_org,
 };

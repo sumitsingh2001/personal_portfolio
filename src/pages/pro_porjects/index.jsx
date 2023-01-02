@@ -49,10 +49,16 @@ const Projects = () => {
     setpopup([item])
   }
 
+  // if (modal) {
+  //   document.body.classList.add('active')
+  // } else {
+  //   document.body.classList.remove('active')
+  // }
+
   if (modal) {
-    document.body.classList.add('active')
+    document.body.style.overflowY = 'hidden'
   } else {
-    document.body.classList.remove('active')
+    document.body.style.overflowY = 'auto'
   }
 
   const settings = {
@@ -148,34 +154,6 @@ const Projects = () => {
 
 export default Projects
 
-const Maintab = ({ swiper, toggle }) => {
-
-  const settings = {
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    dots: true,
-    infinite: false,
-    initialSlide: 0,
-  };
-
-  <div className="project_carousel">
-    <div className="slider-wrapper">
-      <Slider {...settings}>
-        {swiper.map((item, idx) => {
-          return (
-            <Swiper
-              key={idx}
-              img={item.img}
-              head={item.head}
-              para={item.para}
-            />
-          )
-        })}
-      </Slider>
-    </div>
-  </div>
-}
 
 const Swiper = ({ img, head, para, toggle }) => {
   return (
