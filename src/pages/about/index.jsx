@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navigation } from '../../components'
+import { AboutBanner, Navigation } from '../../components'
 
 const About = () => {
   return (
@@ -7,7 +7,7 @@ const About = () => {
       <div className='header_container'>
         <div className="info">
           <Navigation />
-
+          <AboutBanner />
         </div>
       </div>
     </div>
