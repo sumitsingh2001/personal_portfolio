@@ -27,6 +27,10 @@ body.active {
   cursor: pointer;
 }
 
+.project_carousel_card:hover .pro_desc .pro_desc_head {
+  transform: translateX(14px);
+}
+
 .pro_img_wrap {
   width: 100%;
   height: 300px;
@@ -49,6 +53,7 @@ body.active {
   width: 100%;
   margin-top: 20px;
   opacity: 0.8;
+  position: relative;
 }
 
 .pro_desc_head {
@@ -57,7 +62,26 @@ body.active {
   font-size: 14px;
   margin-bottom: 16px;
   letter-spacing: 1.1px;
+  transition: all 0.3s ease-out;
 
+}
+
+.project_carousel_card:hover .pro_desc span {
+  transform: translate(10px, -10%);
+  opacity: 1;
+
+}
+
+.pro_desc span {
+  position: absolute;
+  left: -10px;
+  transform: translateY(-10%);
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.2s;
 }
 
 .pro_desc_para {
@@ -174,4 +198,33 @@ body.active {
 .g8 {
   grid-column: 1/5;
   grid-row: 5/6;
+}
+
+.project_carousel .slick-slider button {
+  min-height: 54px;
+}
+
+.project_carousel .slick-slider .slick-arrow {
+  top: -15%;
+
+}
+
+.project_carousel .slick-slider .slick-prev {
+  left: 90%;
+  transform: rotate(180deg);
+}
+
+.project_carousel .slick-slider .slick-next {
+  right: 5%;
+}
+
+.project_carousel .slick-prev:before,
+.project_carousel .slick-next:before {
+  content: '➣';
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.project_carousel .slick-dots {
+  display: none !important;
 }

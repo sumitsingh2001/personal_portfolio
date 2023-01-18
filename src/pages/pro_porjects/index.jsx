@@ -160,10 +160,11 @@ const Swiper = ({ img, head, para, toggle }) => {
     <>
       <div className="project_carousel_card" >
         <div className="pro_img_wrap">
-          <img src={img} alt="" />
+          <img src={img} alt="" onClick={toggle} />
         </div>
         <div className="pro_desc">
-          <h3 className="pro_desc_head" onClick={toggle}>{head} </h3>
+          <span>#</span>
+          <h3 className="pro_desc_head" onClick={toggle}>  {head} </h3>
           <p className="pro_desc_para">{para} </p>
         </div>
       </div>
