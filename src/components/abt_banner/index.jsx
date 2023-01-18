@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { git_dots, git_org } from '../../assets/images';
 import SpanTitle from '../title';
 import './style.css';
-import { RxCross1 } from 'react-icons/rx'
+// import { RxCross1 } from 'react-icons/rx'
 import { GiCrossedBones } from 'react-icons/gi'
 
 
