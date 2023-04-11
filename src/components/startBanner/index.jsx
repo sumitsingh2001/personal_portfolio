@@ -35,85 +35,87 @@ const BannerMain = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false)
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timer)
   }, []);
 
 
   return (
-
-    <div className="main_banner_wrapper" >
-      {isVisible ? (
-        <div className='warning'>  Work In progress right now <TfiAlert color='red' fontSize={32} /></div>
-      ) : null}
-
-      <div className="dot1"></div>
-      <div className="container">
-        <div className="title_area">
-          <div class='main_img'>
-            <img src={banner_img} alt='banner' />
+    <>
+      <div className="main_banner_wrapper" >
+        {isVisible ? (
+          <div className='warning'>  Work In progress right now <TfiAlert color='red' fontSize={32} /></div>
+        ) : null}
+        <div className="dot1"></div>
+        <div className="container">
+          <div className="title_area">
+            <div class='main_img'>
+              <img src={banner_img} alt='banner' />
+            </div>
           </div>
-        </div>
-        <div className="section_area">
-          <div className="section_items">
-            <div className="title">HI There ! I'M</div>
-            <div className="name"> Sumit Singh</div>
-            <div className="dev">Developer</div>
+          <div className="section_area">
+            <div className="section_items">
+              <div className="title">HI There ! I'M</div>
+              <div className="name"> Sumit Singh</div>
+              <div className="dev">Developer</div>
+            </div>
+            <Link to={'/about'}>
+              <div className="section_items">
+                <div className="i_links">
+                  <div className="link1">
+                    <div className='t_link'>About</div>
+                    <div className='t_link'>About</div>
+                  </div>
+
+                  <div className="link2">
+                    <div className='t_link'>ME</div>
+                    <div className='t_link'>ME</div>
+                  </div>
+
+                </div>
+              </div>
+            </Link>
+            <Link to={'/portfolio'}>
+              <div className="section_items">
+                <div className="i_links">
+                  <div className="link1">
+                    <div className='t_link'>My</div>
+                    <div className='t_link'>My</div>
+                  </div>
+
+                  <div className="link2">
+                    <div className='t_link'>Portfolio</div>
+                    <div className='t_link'>Portfolio</div>
+                  </div>
+
+                </div>
+              </div>
+            </Link>
+            <Link to={'/contact'}>
+              <div className="section_items">
+                <div className="i_links">
+                  <div className="link1">
+                    <div className='t_link'>Get</div>
+                    <div className='t_link'>Get</div>
+                  </div>
+
+                  <div className="link2">
+                    <div className='t_link'>in Touch</div>
+                    <div className='t_link'>in Touch</div>
+                  </div>
+
+                </div>
+              </div>
+            </Link>
+
           </div>
-          <Link to={'/about'}>
-            <div className="section_items">
-              <div className="i_links">
-                <div className="link1">
-                  <div className='t_link'>About</div>
-                  <div className='t_link'>About</div>
-                </div>
-
-                <div className="link2">
-                  <div className='t_link'>ME</div>
-                  <div className='t_link'>ME</div>
-                </div>
-
-              </div>
-            </div>
-          </Link>
-          <Link to={'/portfolio'}>
-            <div className="section_items">
-              <div className="i_links">
-                <div className="link1">
-                  <div className='t_link'>My</div>
-                  <div className='t_link'>My</div>
-                </div>
-
-                <div className="link2">
-                  <div className='t_link'>Portfolio</div>
-                  <div className='t_link'>Portfolio</div>
-                </div>
-
-              </div>
-            </div>
-          </Link>
-          <Link to={'/contact'}>
-            <div className="section_items">
-              <div className="i_links">
-                <div className="link1">
-                  <div className='t_link'>Get</div>
-                  <div className='t_link'>Get</div>
-                </div>
-
-                <div className="link2">
-                  <div className='t_link'>in Touch</div>
-                  <div className='t_link'>in Touch</div>
-                </div>
-
-              </div>
-            </div>
-          </Link>
-
         </div>
       </div>
-    </div>
+
+    </>
   )
 }
 
 export default BannerMain
+
