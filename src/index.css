@@ -96,8 +96,8 @@ body {
 
 :root {
   /* Main colors */
-  --background: #242734;
-  --lil-fade-background: #292c39;
+  --background: #000;
+  --lil-fade-background: #000;
   --link-color: #848792;
   --color-white: #ffffff;
   /*  */
