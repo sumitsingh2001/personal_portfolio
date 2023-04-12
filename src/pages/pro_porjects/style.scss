@@ -35,6 +35,10 @@ body.active {
 .pro_img_wrap {
   width: 100%;
   height: 300px;
+
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
 }
 
 .pro_img_wrap img {
@@ -43,6 +47,11 @@ body.active {
   filter: grayscale(90%);
   transition: all 0.2s ease-out;
   opacity: 0.6;
+
+  @media screen and (max-width: 767px) {
+    height: 230px;
+    object-fit: contain;
+  }
 }
 
 .project_carousel_card:hover img {
@@ -209,8 +218,11 @@ body.active {
 .project_carousel .slick-slider .slick-arrow {
   top: -15%;
 
-  @media screen and (max-width: 552px) {
-    top: -28%;
+  @media screen and (max-width: 425px) {
+    top: 45%;
+  }
+  @media screen and (max-width: 375px) {
+    top: 43%;
   }
 }
 
@@ -235,6 +247,9 @@ body.active {
   @media screen and (max-width: 767px) {
     right: 11%;
   }
+  @media screen and (max-width: 375px) {
+    right: 10%;
+  }
 }
 
 .project_carousel .slick-prev:before,
@@ -242,6 +257,10 @@ body.active {
   content: "➣";
   font-size: 70px;
   font-weight: 900;
+
+  @media screen and (max-width: 475px) {
+    font-size: 50px;
+  }
 }
 
 .project_carousel .slick-dots {
