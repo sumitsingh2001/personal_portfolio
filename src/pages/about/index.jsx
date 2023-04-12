@@ -2,6 +2,7 @@ import React from 'react'
 import { AboutBanner, Navigation } from '../../components'
 import { Link } from 'react-router-dom'
 import { FcAbout, FcHome, FcContacts, FcBullish } from 'react-icons/fc'
+import { Projects } from '../../pages'
 
 
 const About = () => {
@@ -17,6 +18,7 @@ const About = () => {
         </div>
         <div className="info">
           <AboutBanner />
+          <Projects />
         </div>
       </div>
     </div>

@@ -15,9 +15,15 @@
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  /* flex-wrap: wrap; */
   gap: 20px;
   row-gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .comp_imgs {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 }
 
 .comp_i_cards {
@@ -28,6 +34,18 @@
   transition: all 0.3s ease-out;
   cursor: pointer;
   padding: 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .comp_i_cards {
+    width: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .comp_i_cards {
+    width: 100%;
+  }
 }
 
 .comp_i_cards:hover {

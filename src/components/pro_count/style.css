@@ -13,6 +13,13 @@
 
 }
 
+@media (max-width: 766px) {
+  .counters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .item {
   /* width: calc(100% / 3); */
   flex: 1;

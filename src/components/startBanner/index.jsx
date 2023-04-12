@@ -57,11 +57,11 @@ const BannerMain = () => {
           <div className="section_area">
             <div className="section_items">
               <div className="title">HI There ! I'M</div>
-              <div className="name"> Sumit Singh</div>
-              <div className="dev">Developer</div>
+              <div className="name wow tada" data-wow-iteration="3"> Sumit Singh</div>
+              <div className="dev">Web developer..</div>
             </div>
             <Link to={'/about'}>
-              <div className="section_items">
+              <div className="section_items wow flash">
                 <div className="i_links">
                   <div className="link1">
                     <div className='t_link'>About</div>
@@ -77,7 +77,7 @@ const BannerMain = () => {
               </div>
             </Link>
             <Link to={'/portfolio'}>
-              <div className="section_items">
+              <div className="section_items wow flash" data-wow-delay="1s">
                 <div className="i_links">
                   <div className="link1">
                     <div className='t_link'>My</div>
@@ -93,7 +93,7 @@ const BannerMain = () => {
               </div>
             </Link>
             <Link to={'/contact'}>
-              <div className="section_items">
+              <div className="section_items wow flash" data-wow-delay="2s">
                 <div className="i_links">
                   <div className="link1">
                     <div className='t_link'>Get</div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { HeadTitle, SpanTitle } from '../../components'
 import { GrClose } from 'react-icons/gr'
-import './style.css'
+import './style.scss'
 import Slider from 'react-slick'
 import {
   Celsior,
@@ -49,12 +49,6 @@ const Projects = () => {
     setpopup([item])
   }
 
-  // if (modal) {
-  //   document.body.classList.add('active')
-  // } else {
-  //   document.body.classList.remove('active')
-  // }
-
   if (modal) {
     document.body.style.overflowY = 'hidden'
   } else {
@@ -72,27 +66,22 @@ const Projects = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 1.1,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
+        breakpoint: 552,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
         }
-      }
+      },
+
     ]
   };
 
@@ -101,10 +90,10 @@ const Projects = () => {
       <div className="project_container">
         <div className="project_title">
           <SpanTitle title={'Professional project exp'} />
-          <HeadTitle title={'Project I\'ve done so far ..'} />
+          <HeadTitle title={'Projects, I\'ve done so far ..'} />
         </div>
 
-        <div className="project_carousel">
+        <div className="project_carousel wow fadeInUp">
           <div className="slider-wrapper">
             <Slider {...settings}>
               {ProjectData.map((item, idx) => {
@@ -164,8 +153,8 @@ const Swiper = ({ img, head, para, toggle }) => {
         </div>
         <div className="pro_desc">
           <span>#</span>
-          <h3 className="pro_desc_head" onClick={toggle}>  {head} </h3>
-          <p className="pro_desc_para">{para} </p>
+          <h3 className="pro_desc_head wow fadeInUp" onClick={toggle}>  {head} </h3>
+          <p className="pro_desc_para wow fadeInUp">{para} </p>
         </div>
       </div>
     </>
@@ -245,8 +234,8 @@ const ProjectData = [
   {
 
     img: Celsior4,
-    head: 'Givest - Non Profit PSD Template',
-    para: 'Chairty / Fund Rising / Non Profit',
+    head: 'CELSIOR PROJECT.',
+    para: 'I was responsible in for making frontend of the web. Tech used in it was, GULP, HTML5, CSS3, JAVASCRIPT. ',
 
     modVid: Celsior4,
     modImg1: Celsior4,
@@ -260,8 +249,8 @@ const ProjectData = [
   },
   {
     img: Aurbis,
-    head: 'Givest - Non Profit PSD Template',
-    para: 'Chairty / Fund Rising / Non Profit',
+    head: 'AURBIS PROJECT.',
+    para: 'This project was based on GULP, HTML5, CSS3, JAVASCRIPT etc. I worked in this project as a front dev.',
     modVid: Aurbis,
     modImg1: Aurbis3,
     modImg2: Aurbis2,
@@ -274,8 +263,8 @@ const ProjectData = [
   },
   {
     img: Yours1,
-    head: 'Givest - Non Profit PSD Template',
-    para: 'Chairty / Fund Rising / Non Profit',
+    head: 'YOURS-TM',
+    para: 'This was a GULP, JAVASCRIP, HTML5, CSS3 project this was a booking kinda type web where we can book hotels to stay. ',
     modVid: Yours4,
     modImg1: Yours2,
     modImg2: Yours3,
@@ -288,8 +277,8 @@ const ProjectData = [
   },
   {
     img: Py1,
-    head: 'Givest - Non Profit PSD Template',
-    para: 'Chairty / Fund Rising / Non Profit',
+    head: 'Pyramid Intranet',
+    para: 'The project was based on GULP, JAVASCRIPT, HTML5, CSS3 and I work in it as a frontend developer and created the UI ',
     modVid: Py1,
     modImg1: Py5,
     modImg2: Py2,
