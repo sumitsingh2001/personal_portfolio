@@ -75,7 +75,7 @@ const Projects = () => {
       {
         breakpoint: 552,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.1,
           slidesToScroll: 1,
           infinite: true,
           dots: true
