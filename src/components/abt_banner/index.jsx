@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
-import { git_dots, git_org } from '../../assets/images';
+import {
+  git_dots, git_org, recent_git, git2023,
+} from '../../assets/images';
 import SpanTitle from '../title';
-import './style.css';
-// import { RxCross1 } from 'react-icons/rx'
+import './style.scss';
 import { GiCrossedBones } from 'react-icons/gi'
 
 
@@ -31,15 +31,11 @@ const AboutBanner = () => {
     <>
       <div className="about_banner_container">
         <div className="abt_header">
-          <p>About Me</p>
-          <div className="abt_links">
-            <Link to='/'> <span>Home</span></Link> <span>||</span>
-            <Link to='/about'> <span>About</span></Link>
-          </div>
+          <p>Portfolio</p>
         </div>
 
         <div className="abt_desc">
-          <SpanTitle title='POV: Let`s start with my DEC - 2020 git ..' />
+          <SpanTitle title='All my recent activities..' />
           <div className="abt_git">
             {GT_img.map((item, idx) => {
               return (
@@ -83,7 +79,7 @@ const Content = ({ img, forFun, desc }) => {
   return (
     <>
       <span className="c_sp">
-        <div className="abt_gt_wrap" onClick={forFun}>
+        <div className="abt_gt_wrap" title='click to open' onClick={forFun}>
           <img src={img} alt="" />
         </div>
         <div className="ig_span"><p>{desc}</p></div>
@@ -110,11 +106,18 @@ const POPUP = ({ img, toggle }) => {
 const GT_img = [
   {
     img: git_dots,
-    ig_des: 'This is my current GIT information that you`r watching right now, Last updated DEC/2020 '
+    ig_des: "GIT Made Easy: Get the Last Update of December 2022."
   },
   {
     img: git_org,
-    ig_des: ' This is something that you can see, Organiztions I`ve worked for '
-
+    ig_des: "Experienced professional with a successful track record working for a range of organizations."
+  },
+  {
+    img: recent_git,
+    ig_des: "Collaborative Coding Made Easy: A Git Activity for Teams"
+  },
+  {
+    img: git2023,
+    ig_des: 'The current updates of 2023. Last updated on April-12.'
   }
 ]

@@ -3,8 +3,21 @@
   font-family: kanit_medium, serif;
   font-size: 16px;
   letter-spacing: 1.04px;
-  line-height: 4;
+  line-height: 2.5;
   /* margin-bottom: 16px; */
+
+}
+
+@media (max-width: 767px) {
+  .span_title_cont .span_title {
+    margin-bottom: 12px;
+    max-width: 90%;
+    line-height: 140%;
+  }
+
+  .span_title_cont .span_title .title_line {
+    margin-right: 4px;
+  }
 }
 
 .span_title_cont .span_title .title_line {

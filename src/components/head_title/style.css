@@ -1,11 +1,29 @@
 .head_title_cont {
   width: fit-content;
+  max-width: 100%;
 }
 
 .head_title_cont .head_title {
   font-size: 65px;
   text-transform: capitalize;
   color: var(--color-white);
-  margin-bottom: 85px;
+  margin-bottom: 35px;
   font-family: cormorant_bold;
+
+}
+
+@media (max-width: 768px) {
+  .head_title_cont .head_title {
+    line-height: 130%;
+    font-size: 48px;
+  }
+
+}
+
+@media (max-width: 552px) {
+  .head_title_cont .head_title {
+    line-height: 120%;
+    font-size: 32px;
+  }
+
 }

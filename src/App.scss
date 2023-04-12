@@ -54,6 +54,7 @@
 .constant_links {
   .c-l {
     position: fixed;
+    z-index: 1000;
 
     &:nth-child(1) {
       top: 100px;
@@ -70,7 +71,6 @@
     }
     .c-links {
       min-width: 150px;
-      margin-bottom: 4px;
       display: flex;
       align-items: center;
       gap: 15px;
@@ -84,9 +84,15 @@
       &:hover {
         right: 0;
       }
-
+      @media screen and (max-width: 767px) {
+        right: -110px;
+      }
       span {
         font-size: 32px;
+
+        @media screen and (max-width: 767px) {
+          font-size: 24px;
+        }
       }
 
       p {
@@ -105,4 +111,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    height: 90vh;
+  }
 }
