@@ -14,6 +14,11 @@
 }
 
 @media (max-width: 766px) {
+  .counter_container {
+    padding: 0 0;
+    padding-bottom: 40px;
+  }
+
   .counters {
     flex-direction: column;
     align-items: flex-start;
