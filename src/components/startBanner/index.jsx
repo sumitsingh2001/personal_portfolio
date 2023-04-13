@@ -66,7 +66,7 @@ const BannerMain = () => {
               <div className="dev">Web developer..</div>
             </div>
             <Link to={'/about'}>
-              <div className="section_items wow flash">
+              <div className="section_items wow fadeIn">
                 <div className="i_links">
                   <div className="link1">
                     <div className='t_link'>About</div>
@@ -82,7 +82,7 @@ const BannerMain = () => {
               </div>
             </Link>
             <Link to={'/portfolio'}>
-              <div className="section_items wow flash" data-wow-delay="0.5s">
+              <div className="section_items wow fadeIn" data-wow-delay="0.5s">
                 <div className="i_links">
                   <div className="link1">
                     <div className='t_link'>My</div>
@@ -98,7 +98,7 @@ const BannerMain = () => {
               </div>
             </Link>
             <Link to={'/contact'}>
-              <div className="section_items wow flash" data-wow-delay="1s">
+              <div className="section_items wow fadeIn" data-wow-delay="1s">
                 <div className="i_links">
                   <div className="link1">
                     <div className='t_link'>Get</div>
@@ -113,7 +113,6 @@ const BannerMain = () => {
                 </div>
               </div>
             </Link>
-
           </div>
         </div>
       </div>
