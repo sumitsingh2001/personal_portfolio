@@ -3,6 +3,8 @@ import './index.scss'
 import { banner_img } from '../../assets/images';
 import { Link } from 'react-router-dom';
 import { TfiAlert } from 'react-icons/tfi'
+import { BsWhatsapp } from 'react-icons/bs'
+
 
 const BannerMain = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -44,6 +46,9 @@ const BannerMain = () => {
   return (
     <>
       <div className="main_banner_wrapper" >
+        <div className='whatsapp'><a href={`https://wa.me/+918928054617`}><BsWhatsapp /></a>
+          <div className="q-tool"><a href={`https://wa.me/+918928054617`}>Quick message</a></div>
+        </div>
         {isVisible ? (
           <div className='warning'>  Work In progress right now <TfiAlert color='red' fontSize={32} /></div>
         ) : null}
@@ -57,7 +62,7 @@ const BannerMain = () => {
           <div className="section_area">
             <div className="section_items">
               <div className="title">HI There ! I'M</div>
-              <div className="name wow tada" data-wow-iteration="3"> Sumit Singh</div>
+              <div className="name wow tada" data-wow-iteration="2"> Sumit Singh</div>
               <div className="dev">Web developer..</div>
             </div>
             <Link to={'/about'}>
@@ -77,7 +82,7 @@ const BannerMain = () => {
               </div>
             </Link>
             <Link to={'/portfolio'}>
-              <div className="section_items wow flash" data-wow-delay="1s">
+              <div className="section_items wow flash" data-wow-delay="0.5s">
                 <div className="i_links">
                   <div className="link1">
                     <div className='t_link'>My</div>
@@ -93,7 +98,7 @@ const BannerMain = () => {
               </div>
             </Link>
             <Link to={'/contact'}>
-              <div className="section_items wow flash" data-wow-delay="2s">
+              <div className="section_items wow flash" data-wow-delay="1s">
                 <div className="i_links">
                   <div className="link1">
                     <div className='t_link'>Get</div>
