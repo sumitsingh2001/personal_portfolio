@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navigation } from '../../components'
+import { GetInTouch, Navigation } from '../../components'
 import { FcAbout, FcHome, FcContacts, FcBullish } from 'react-icons/fc'
 import { Link } from 'react-router-dom'
 
@@ -13,6 +13,7 @@ const Contact = () => {
         <div className="c-l"><Link to={'/contact'} className='c-links'><span> <FcContacts /> </span> <p>In Touch</p></Link></div>
       </div>
       </div>
+      <GetInTouch />
     </div>
   )
 }

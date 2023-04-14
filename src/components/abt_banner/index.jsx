@@ -35,8 +35,8 @@ const AboutBanner = () => {
         </div>
 
         <div className="abt_desc">
-          <SpanTitle title='All my recent activities..' />
-          <div className="abt_git">
+          <SpanTitle title='All of my recent activities..' />
+          <div className="abt_git wow fadeInUp">
             {GT_img.map((item, idx) => {
               return (
                 <Content

@@ -116,3 +116,50 @@
     height: 90vh;
   }
 }
+
+.app_container {
+  .tag-line {
+    padding-bottom: 56px;
+    width: 85%;
+    margin-inline: auto;
+    text-align: left;
+    opacity: 0.7;
+
+    .span_text {
+      color: var(--color-white);
+      font-family: notosans_bold;
+      font-size: 18px;
+      word-spacing: 0.2px;
+      text-align: justify;
+      line-height: 130%;
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+        text-align: left;
+      }
+
+      i {
+        color: #daa520;
+        font-size: 16px;
+        letter-spacing: 1.1px;
+        @media screen and (max-width: 767px) {
+          font-size: 13px;
+          text-align: left;
+        }
+      }
+
+      &::first-letter {
+        font-size: 48px;
+        color: #daa520;
+        font-style: italic;
+
+        @media screen and (max-width: 767px) {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
