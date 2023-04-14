@@ -56,20 +56,21 @@ const Projects = () => {
   }
 
   const settings = {
-    speed: 500,
+    speed: 5000,
     slidesToShow: 2,
     slidesToScroll: 1,
     dots: true,
-    infinite: false,
+    infinite: true,
     initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1.1,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
         }
       },
       {
@@ -78,7 +79,6 @@ const Projects = () => {
           slidesToShow: 1.1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
         }
       },
 

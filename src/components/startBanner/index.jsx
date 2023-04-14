@@ -62,7 +62,7 @@ const BannerMain = () => {
           <div className="section_area">
             <div className="section_items">
               <div className="title">HI There ! I'M</div>
-              <div className="name wow tada" data-wow-iteration="2"> Sumit Singh</div>
+              <div className="name wow tada" data-wow-iteration="1"> Sumit Singh</div>
               <div className="dev">Web developer..</div>
             </div>
             <Link to={'/about'}>
